@@ -1,0 +1,1112 @@
+{
+  "Packages": [
+    {
+      "Package": {
+        "Id": "AccelerateRPA.FixerIO.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\acceleraterpa.fixerio.activities/1.0.1\\lib/Fixer.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\fixersharp/1.2.2\\lib/netstandard1.1/FixerSharp.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\microsoft.win32.primitives/4.3.0\\lib/net46/Microsoft.Win32.Primitives.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.appcontext/4.3.0\\lib/net46/System.AppContext.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.console/4.3.0\\lib/net46/System.Console.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.diagnostics.diagnosticsource/4.3.0\\lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.globalization.calendars/4.3.0\\lib/net46/System.Globalization.Calendars.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.compression/4.3.0\\lib/net46/System.IO.Compression.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.compression.zipfile/4.3.0\\lib/net46/System.IO.Compression.ZipFile.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.filesystem/4.3.0\\lib/net46/System.IO.FileSystem.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.filesystem.primitives/4.3.0\\lib/net46/System.IO.FileSystem.Primitives.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.net.http/4.3.0\\lib/net46/System.Net.Http.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.net.sockets/4.3.0\\lib/net46/System.Net.Sockets.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation/4.3.0\\lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.security.cryptography.algorithms/4.3.0\\lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.security.cryptography.encoding/4.3.0\\lib/net46/System.Security.Cryptography.Encoding.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.security.cryptography.primitives/4.3.0\\lib/net46/System.Security.Cryptography.Primitives.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.security.cryptography.x509certificates/4.3.0\\lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.xml.readerwriter/4.3.0\\lib/net46/System.Xml.ReaderWriter.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "BalaReva.Externals.Activities",
+        "Version": "4.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\balareva.externals.activities/4.0.3\\lib/BalaReva.Externals.Design.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\balareva.externals.activities/4.0.3\\lib/BalaReva.Externals.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\balareva.externals.activities/4.0.3\\lib/Ionic.Zip.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\balareva.externals.activities/4.0.3\\lib/Newtonsoft.Json.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\balareva.externals.activities/4.0.3\\lib/SharpCompress.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "Canducci.Excel",
+        "Version": "1.1.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\canducci.excel/1.1.3\\lib/net46/Canducci.Excel.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\closedxml/0.94.2\\lib/net46/ClosedXML.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\documentformat.openxml/2.7.2\\lib/net46/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\excelnumberformat/1.0.3\\lib/net20/ExcelNumberFormat.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\fastmember/1.3.0\\lib/net45/FastMember.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.filesystem.primitives/4.3.0\\lib/net46/System.IO.FileSystem.Primitives.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.packaging/4.0.0\\lib/net46/System.IO.Packaging.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "currency",
+        "Version": "3.1.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\currency/3.1.2\\lib/netstandard1.0/currency.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\microsoft.win32.primitives/4.3.0\\lib/net46/Microsoft.Win32.Primitives.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.appcontext/4.3.0\\lib/net46/System.AppContext.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.console/4.3.0\\lib/net46/System.Console.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.diagnostics.diagnosticsource/4.3.0\\lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.globalization.calendars/4.3.0\\lib/net46/System.Globalization.Calendars.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.compression/4.3.0\\lib/net46/System.IO.Compression.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.compression.zipfile/4.3.0\\lib/net46/System.IO.Compression.ZipFile.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.filesystem/4.3.0\\lib/net46/System.IO.FileSystem.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.filesystem.primitives/4.3.0\\lib/net46/System.IO.FileSystem.Primitives.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.net.http/4.3.0\\lib/net46/System.Net.Http.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.net.sockets/4.3.0\\lib/net46/System.Net.Sockets.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation/4.3.0\\lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.security.cryptography.algorithms/4.3.0\\lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.security.cryptography.encoding/4.3.0\\lib/net46/System.Security.Cryptography.Encoding.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.security.cryptography.primitives/4.3.0\\lib/net46/System.Security.Cryptography.Primitives.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.security.cryptography.x509certificates/4.3.0\\lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.xml.readerwriter/4.3.0\\lib/net46/System.Xml.ReaderWriter.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "exchange-rate",
+        "Version": "1.0.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\exchange-rate/1.0.5\\lib/net452/ExchangeRate.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "MasterCard-CurrencyConversion",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\log4net/2.0.5\\lib/net45-full/log4net.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-core/1.4.0\\lib/MasterCard-Core.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-core/1.4.0\\lib/Newtonsoft.Json.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-core/1.4.0\\lib/RestSharp.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-core/1.4.0\\lib/log4net.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-currencyconversion/1.0.1\\lib/MasterCard-Core.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-currencyconversion/1.0.1\\lib/MasterCard-CurrencyConversion.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-currencyconversion/1.0.1\\lib/Newtonsoft.Json.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-currencyconversion/1.0.1\\lib/RestSharp.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-currencyconversion/1.0.1\\lib/System.ValueTuple.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-currencyconversion/1.0.1\\lib/log4net.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\mastercard-currencyconversion/1.0.1\\lib/nunit.framework.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\restsharp/105.2.3\\lib/net46/RestSharp.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "OBeautifulCode.DateTime",
+        "Version": "1.0.6"
+      },
+      "Assemblies": []
+    },
+    {
+      "Package": {
+        "Id": "Open.DateTime.Extensions",
+        "Version": "1.1.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\open.arithmetic/1.4.0\\lib/netstandard2.0/Open.Arithmetic.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\open.datetime.extensions/1.1.4\\lib/netstandard2.0/Open.DateTime.Extensions.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\open.numeric/2.0.1\\lib/netstandard2.0/Open.Numeric.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\open.range/1.2.1\\lib/netstandard2.0/Open.Range.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.buffers/4.4.0\\lib/netstandard2.0/System.Buffers.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.memory/4.5.3\\lib/netstandard2.0/System.Memory.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.numerics.vectors/4.4.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.5.2\\lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Excel.Activities",
+        "Version": "2.6.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\closedxml/0.94.2\\lib/net46/ClosedXML.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\documentformat.openxml/2.7.2\\lib/net46/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\excelnumberformat/1.0.3\\lib/net20/ExcelNumberFormat.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\fastmember/1.3.0\\lib/net45/FastMember.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.filesystem.primitives/4.3.0\\lib/net46/System.IO.FileSystem.Primitives.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\system.io.packaging/4.0.0\\lib/net46/System.IO.Packaging.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.excel.activities/2.6.2\\lib/net461/UiPath.Excel.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Mail.Activities",
+        "Version": "1.5.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\bouncycastle/1.8.1\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\interop.domino.dll/1.0.0\\lib/Interop.Domino.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/MailKit.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/MimeKit.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.Activities.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.mail.activities/1.5.1\\lib/net452/UiPath.Mail.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.System.Activities",
+        "Version": "19.7.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.system.activities/19.7.0\\lib/net461/UiPath.System.Activities.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.UIAutomation.Activities",
+        "Version": "19.7.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\2nv\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath/19.7.7128.27029\\lib/UiPath.Interop.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.ocr.contracts/2.0.0\\lib/net45/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.uiautomation.activities/19.7.0\\lib/net461/UiPath.Wizards.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyCloud.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRE11.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRE12.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AbbyyFRECommon.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Core.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Microsoft.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\2nv\\.nuget\\packages\\uipath.vision/1.6.1\\lib/net452/UiPath.Vision.dll"
+      ]
+    }
+  ],
+  "Conflicts": [],
+  "ResolvedDependencies": {
+    "AccelerateRPA.FixerIO.Activities": {
+      "Id": "AccelerateRPA.FixerIO.Activities",
+      "Version": "1.0.1",
+      "Dependencies": [
+        {
+          "Item1": "FixerSharp",
+          "Item2": "[1.2.2, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[9.0.1, )"
+        }
+      ]
+    },
+    "AvalonEdit": {
+      "Id": "AvalonEdit",
+      "Version": "5.0.3",
+      "Dependencies": []
+    },
+    "BalaReva.Externals.Activities": {
+      "Id": "BalaReva.Externals.Activities",
+      "Version": "4.0.3",
+      "Dependencies": []
+    },
+    "BouncyCastle": {
+      "Id": "BouncyCastle",
+      "Version": "1.8.1",
+      "Dependencies": []
+    },
+    "Canducci.Excel": {
+      "Id": "Canducci.Excel",
+      "Version": "1.1.3",
+      "Dependencies": [
+        {
+          "Item1": "ClosedXML",
+          "Item2": "[0.94.2, )"
+        }
+      ]
+    },
+    "ClosedXML": {
+      "Id": "ClosedXML",
+      "Version": "0.94.2",
+      "Dependencies": [
+        {
+          "Item1": "DocumentFormat.OpenXml",
+          "Item2": "[2.7.2, )"
+        },
+        {
+          "Item1": "ExcelNumberFormat",
+          "Item2": "[1.0.3, )"
+        },
+        {
+          "Item1": "FastMember",
+          "Item2": "[1.3.0, )"
+        }
+      ]
+    },
+    "CsvHelper": {
+      "Id": "CsvHelper",
+      "Version": "2.13.5",
+      "Dependencies": []
+    },
+    "currency": {
+      "Id": "currency",
+      "Version": "3.1.2",
+      "Dependencies": [
+        {
+          "Item1": "NETStandard.Library",
+          "Item2": "[1.6.1, )"
+        }
+      ]
+    },
+    "DocumentFormat.OpenXml": {
+      "Id": "DocumentFormat.OpenXml",
+      "Version": "2.7.2",
+      "Dependencies": [
+        {
+          "Item1": "System.IO.Packaging",
+          "Item2": "[4.0.0, )"
+        }
+      ]
+    },
+    "ExcelNumberFormat": {
+      "Id": "ExcelNumberFormat",
+      "Version": "1.0.3",
+      "Dependencies": []
+    },
+    "exchange-rate": {
+      "Id": "exchange-rate",
+      "Version": "1.0.5",
+      "Dependencies": []
+    },
+    "Extended.Wpf.Toolkit": {
+      "Id": "Extended.Wpf.Toolkit",
+      "Version": "2.8.0",
+      "Dependencies": []
+    },
+    "FastMember": {
+      "Id": "FastMember",
+      "Version": "1.3.0",
+      "Dependencies": []
+    },
+    "FixerSharp": {
+      "Id": "FixerSharp",
+      "Version": "1.2.2",
+      "Dependencies": [
+        {
+          "Item1": "NETStandard.Library",
+          "Item2": "[1.6.1, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[9.0.1, )"
+        }
+      ]
+    },
+    "Humanizer.Core": {
+      "Id": "Humanizer.Core",
+      "Version": "2.4.2",
+      "Dependencies": []
+    },
+    "interop.domino.dll": {
+      "Id": "interop.domino.dll",
+      "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "log4net": {
+      "Id": "log4net",
+      "Version": "2.0.5",
+      "Dependencies": []
+    },
+    "MasterCard-Core": {
+      "Id": "MasterCard-Core",
+      "Version": "1.4.0",
+      "Dependencies": [
+        {
+          "Item1": "log4net",
+          "Item2": "[2.0.5, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[9.0.1, )"
+        },
+        {
+          "Item1": "RestSharp",
+          "Item2": "[105.2.3, )"
+        }
+      ]
+    },
+    "MasterCard-CurrencyConversion": {
+      "Id": "MasterCard-CurrencyConversion",
+      "Version": "1.0.1",
+      "Dependencies": [
+        {
+          "Item1": "MasterCard-Core",
+          "Item2": "[1.4.0, 1.5.0)"
+        }
+      ]
+    },
+    "Microsoft.AspNet.SignalR.Client": {
+      "Id": "Microsoft.AspNet.SignalR.Client",
+      "Version": "2.4.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[6.0.4, )"
+        }
+      ]
+    },
+    "Microsoft.CSharp": {
+      "Id": "Microsoft.CSharp",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
+    "Microsoft.Exchange.WebServices": {
+      "Id": "Microsoft.Exchange.WebServices",
+      "Version": "2.2.0",
+      "Dependencies": []
+    },
+    "Microsoft.NETCore.Platforms": {
+      "Id": "Microsoft.NETCore.Platforms",
+      "Version": "1.1.0",
+      "Dependencies": []
+    },
+    "Microsoft.Rest.ClientRuntime": {
+      "Id": "Microsoft.Rest.ClientRuntime",
+      "Version": "2.3.20",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        }
+      ]
+    },
+    "Microsoft.VisualStudio.OLE.Interop": {
+      "Id": "Microsoft.VisualStudio.OLE.Interop",
+      "Version": "7.10.6071",
+      "Dependencies": []
+    },
+    "Microsoft.Win32.Primitives": {
+      "Id": "Microsoft.Win32.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "NETStandard.Library": {
+      "Id": "NETStandard.Library",
+      "Version": "1.6.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.NETCore.Platforms",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "Microsoft.Win32.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.AppContext",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Collections",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Collections.Concurrent",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Console",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Debug",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Tools",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Tracing",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Globalization",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Globalization.Calendars",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.Compression",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.Compression.ZipFile",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.FileSystem",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.FileSystem.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Linq",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Linq.Expressions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Http",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Sockets",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.ObjectModel",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Resources.ResourceManager",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Handles",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.InteropServices",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.InteropServices.RuntimeInformation",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Numerics",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Algorithms",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Encoding",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.X509Certificates",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.RegularExpressions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading.Timer",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Xml.ReaderWriter",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Xml.XDocument",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "Newtonsoft.Json": {
+      "Id": "Newtonsoft.Json",
+      "Version": "11.0.2",
+      "Dependencies": []
+    },
+    "NPOI": {
+      "Id": "NPOI",
+      "Version": "2.4.1",
+      "Dependencies": [
+        {
+          "Item1": "SharpZipLib",
+          "Item2": "[1.0.0, )"
+        }
+      ]
+    },
+    "OBeautifulCode.DateTime": {
+      "Id": "OBeautifulCode.DateTime",
+      "Version": "1.0.6",
+      "Dependencies": []
+    },
+    "Open.Arithmetic": {
+      "Id": "Open.Arithmetic",
+      "Version": "1.4.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "Open.DateTime.Extensions": {
+      "Id": "Open.DateTime.Extensions",
+      "Version": "1.1.4",
+      "Dependencies": [
+        {
+          "Item1": "Open.Numeric",
+          "Item2": "[2.0.1, )"
+        },
+        {
+          "Item1": "Open.Range",
+          "Item2": "[1.2.1, )"
+        }
+      ]
+    },
+    "Open.Numeric": {
+      "Id": "Open.Numeric",
+      "Version": "2.0.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.3, )"
+        }
+      ]
+    },
+    "Open.Range": {
+      "Id": "Open.Range",
+      "Version": "1.2.1",
+      "Dependencies": [
+        {
+          "Item1": "Open.Arithmetic",
+          "Item2": "[1.4.0, )"
+        }
+      ]
+    },
+    "RestSharp": {
+      "Id": "RestSharp",
+      "Version": "105.2.3",
+      "Dependencies": []
+    },
+    "SharpZipLib": {
+      "Id": "SharpZipLib",
+      "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "System.AppContext": {
+      "Id": "System.AppContext",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Buffers": {
+      "Id": "System.Buffers",
+      "Version": "4.4.0",
+      "Dependencies": []
+    },
+    "System.Collections": {
+      "Id": "System.Collections",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Collections.Concurrent": {
+      "Id": "System.Collections.Concurrent",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Console": {
+      "Id": "System.Console",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Diagnostics.Debug": {
+      "Id": "System.Diagnostics.Debug",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Diagnostics.DiagnosticSource": {
+      "Id": "System.Diagnostics.DiagnosticSource",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Diagnostics.Tools": {
+      "Id": "System.Diagnostics.Tools",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Diagnostics.Tracing": {
+      "Id": "System.Diagnostics.Tracing",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Globalization": {
+      "Id": "System.Globalization",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Globalization.Calendars": {
+      "Id": "System.Globalization.Calendars",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.IO": {
+      "Id": "System.IO",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.IO.Compression": {
+      "Id": "System.IO.Compression",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.IO.Compression.ZipFile": {
+      "Id": "System.IO.Compression.ZipFile",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.IO.FileSystem": {
+      "Id": "System.IO.FileSystem",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.IO.FileSystem.Primitives",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.IO.FileSystem.Primitives": {
+      "Id": "System.IO.FileSystem.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.IO.Packaging": {
+      "Id": "System.IO.Packaging",
+      "Version": "4.0.0",
+      "Dependencies": [
+        {
+          "Item1": "System.IO.FileSystem.Primitives",
+          "Item2": "[4.0.1, )"
+        }
+      ]
+    },
+    "System.Linq": {
+      "Id": "System.Linq",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Linq.Expressions": {
+      "Id": "System.Linq.Expressions",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Memory": {
+      "Id": "System.Memory",
+      "Version": "4.5.3",
+      "Dependencies": [
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.4.0, )"
+        },
+        {
+          "Item1": "System.Numerics.Vectors",
+          "Item2": "[4.4.0, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.2, )"
+        }
+      ]
+    },
+    "System.Net.Http": {
+      "Id": "System.Net.Http",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Diagnostics.DiagnosticSource",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.X509Certificates",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Net.Primitives": {
+      "Id": "System.Net.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Net.Sockets": {
+      "Id": "System.Net.Sockets",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Numerics.Vectors": {
+      "Id": "System.Numerics.Vectors",
+      "Version": "4.4.0",
+      "Dependencies": []
+    },
+    "System.ObjectModel": {
+      "Id": "System.ObjectModel",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Reflection": {
+      "Id": "System.Reflection",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Reflection.Extensions": {
+      "Id": "System.Reflection.Extensions",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Reflection.Primitives": {
+      "Id": "System.Reflection.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Resources.ResourceManager": {
+      "Id": "System.Resources.ResourceManager",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Runtime": {
+      "Id": "System.Runtime",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Runtime.CompilerServices.Unsafe": {
+      "Id": "System.Runtime.CompilerServices.Unsafe",
+      "Version": "4.5.2",
+      "Dependencies": []
+    },
+    "System.Runtime.Extensions": {
+      "Id": "System.Runtime.Extensions",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Runtime.Handles": {
+      "Id": "System.Runtime.Handles",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Runtime.InteropServices": {
+      "Id": "System.Runtime.InteropServices",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Runtime.InteropServices.RuntimeInformation": {
+      "Id": "System.Runtime.InteropServices.RuntimeInformation",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Runtime.Numerics": {
+      "Id": "System.Runtime.Numerics",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Security.Cryptography.Algorithms": {
+      "Id": "System.Security.Cryptography.Algorithms",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.Primitives",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Security.Cryptography.Encoding": {
+      "Id": "System.Security.Cryptography.Encoding",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Security.Cryptography.Primitives": {
+      "Id": "System.Security.Cryptography.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Security.Cryptography.X509Certificates": {
+      "Id": "System.Security.Cryptography.X509Certificates",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.Algorithms",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Encoding",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Text.Encoding": {
+      "Id": "System.Text.Encoding",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Text.Encoding.Extensions": {
+      "Id": "System.Text.Encoding.Extensions",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Text.RegularExpressions": {
+      "Id": "System.Text.RegularExpressions",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Threading": {
+      "Id": "System.Threading",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Threading.Tasks": {
+      "Id": "System.Threading.Tasks",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Threading.Timer": {
+      "Id": "System.Threading.Timer",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Xml.ReaderWriter": {
+      "Id": "System.Xml.ReaderWriter",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Xml.XDocument": {
+      "Id": "System.Xml.XDocument",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "UiPath": {
+      "Id": "UiPath",
+      "Version": "19.7.7128.27029",
+      "Dependencies": []
+    },
+    "UiPath.Excel.Activities": {
+      "Id": "UiPath.Excel.Activities",
+      "Version": "2.6.2",
+      "Dependencies": [
+        {
+          "Item1": "ClosedXML",
+          "Item2": "[0.87.1, )"
+        },
+        {
+          "Item1": "CsvHelper",
+          "Item2": "[2.13.5, )"
+        },
+        {
+          "Item1": "DocumentFormat.OpenXml",
+          "Item2": "[2.5.0, )"
+        },
+        {
+          "Item1": "Microsoft.VisualStudio.OLE.Interop",
+          "Item2": "[7.10.6071, )"
+        },
+        {
+          "Item1": "NPOI",
+          "Item2": "[2.4.1, )"
+        },
+        {
+          "Item1": "SharpZipLib",
+          "Item2": "[1.0.0, )"
+        }
+      ]
+    },
+    "UiPath.Mail.Activities": {
+      "Id": "UiPath.Mail.Activities",
+      "Version": "1.5.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Exchange.WebServices",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "BouncyCastle",
+          "Item2": "[1.8.1, )"
+        },
+        {
+          "Item1": "interop.domino.dll",
+          "Item2": "[1.0.0, )"
+        }
+      ]
+    },
+    "UiPath.OCR.Contracts": {
+      "Id": "UiPath.OCR.Contracts",
+      "Version": "2.0.0",
+      "Dependencies": []
+    },
+    "UiPath.System.Activities": {
+      "Id": "UiPath.System.Activities",
+      "Version": "19.7.0",
+      "Dependencies": [
+        {
+          "Item1": "CsvHelper",
+          "Item2": "[2.13.5, )"
+        },
+        {
+          "Item1": "Microsoft.AspNet.SignalR.Client",
+          "Item2": "[2.4.0, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.20, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        }
+      ]
+    },
+    "UiPath.UIAutomation.Activities": {
+      "Id": "UiPath.UIAutomation.Activities",
+      "Version": "19.7.0",
+      "Dependencies": [
+        {
+          "Item1": "UiPath",
+          "Item2": "[19.7.7128.27029, )"
+        },
+        {
+          "Item1": "UiPath.Vision",
+          "Item2": "[1.6.1, )"
+        },
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.0.0, )"
+        },
+        {
+          "Item1": "AvalonEdit",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "Extended.Wpf.Toolkit",
+          "Item2": "[2.8.0, )"
+        },
+        {
+          "Item1": "Humanizer.Core",
+          "Item2": "[2.4.2, )"
+        }
+      ]
+    },
+    "UiPath.Vision": {
+      "Id": "UiPath.Vision",
+      "Version": "1.6.1",
+      "Dependencies": []
+    }
+  }
+}

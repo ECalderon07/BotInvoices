@@ -1,0 +1,634 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ODOO_InsertData" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_StrName" Type="InArgument(x:String)" />
+    <x:Property Name="in_StrNoFact" Type="InArgument(x:String)" />
+    <x:Property Name="In_LcDt" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="In_StrEndDate" Type="InArgument(x:String)" />
+    <x:Property Name="In_StrDate" Type="InArgument(x:String)" />
+    <x:Property Name="In_Factura" Type="InArgument(x:String)" />
+    <x:Property Name="in_StrRetain" Type="InArgument(x:String)" />
+    <x:Property Name="in_StrCA" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>843,7689</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ODOO_InsertData_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="24">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.Database</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="22">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="823,7629" sap2010:WorkflowViewState.IdRef="Sequence_20">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="Count" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="ODOO_InsertData" sap:VirtualizedContainerService.HintSize="781,7537" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="LcDt" />
+        <Variable x:TypeArguments="x:String" Default="C:\Users\X555QG\Documents\UiPath\Falcom_2nv\Data_No_Procesada" Name="FilePath" />
+        <Variable x:TypeArguments="x:String" Name="Proveedor" />
+        <Variable x:TypeArguments="x:String" Name="NumeroFactura" />
+        <Variable x:TypeArguments="x:String" Default="Error al registrar" Name="LogResult" />
+        <Variable x:TypeArguments="x:String" Name="LcStrCA" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="739,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+        <Assign.To>
+          <OutArgument x:TypeArguments="sd:DataTable">[LcDt]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="sd:DataTable">[In_LcDt]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="739,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Int32">[Count]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Int32">0</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'iexplore.exe Nuevo'" sap:VirtualizedContainerService.HintSize="739,7245" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="91aba522341e12000f1b2a2324c1c737" Selector="&lt;html title='Nuevo - Odoo' /&gt;">
+        <ui:BrowserScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="705,7099" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="errorData" />
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="Boo_Alert" />
+                <Variable x:TypeArguments="ui:GenericValue" Name="LcStrName2" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:TypeInto DelayBefore="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayBetweenKeys="100" DisplayName="Type Into 'INPUT  o_field_input_21'" EmptyField="True" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="False" SimulateType="False" Text="[in_StrName.ToString.Replace(&quot;SAS&quot;,&quot;&quot;).Replace(&quot;S.A.S&quot;,&quot;&quot;)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="41487eadeea25fd65a629b3bea2b21f2" Selector="&lt;webctrl tag='INPUT' aaname='Proveedor' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A'" sap:VirtualizedContainerService.HintSize="663,106" sap2010:WorkflowViewState.IdRef="Click_16" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="0e79ca11620cf1c2dad854ba119fbe0f" Selector="&lt;webctrl parentid='ui-id-*' tag='A' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey 'INPUT  o_field_input_641'" EmptyField="False" sap:VirtualizedContainerService.HintSize="663,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="tab" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="aa3c57561bd487db6190db30b33aeafe" Selector="&lt;webctrl tag='INPUT' aaname='Proveedor' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:SendHotkey.Target>
+              </ui:SendHotkey>
+              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'INPUT  o_field_input_16...'" sap:VirtualizedContainerService.HintSize="663,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                <ui:GetValue.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="a6d899ce0977bdf2d6c3fcfdf1acb6aa" Selector="&lt;webctrl tag='INPUT' aaname='Proveedor' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:GetValue.Target>
+                <ui:GetValue.Value>
+                  <OutArgument x:TypeArguments="ui:GenericValue">[LcStrName2]</OutArgument>
+                </ui:GetValue.Value>
+              </ui:GetValue>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="663,91" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;Selección de nombre de proveedor&quot;]" />
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Main workflow" sap:VirtualizedContainerService.HintSize="663,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="excel\Main.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_StrProvider">[LcStrName2]</InArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="Out_StrCA">[in_StrCA]</OutArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:TypeInto DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayBefore="3000" DisplayName="Type Into 'INPUT  o_field_input_107'" EmptyField="True" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="False" SimulateType="True" Text="[in_StrNoFact.ToString]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="43d3b1201d63970e992a43407d6a1a78" Selector="&lt;webctrl tag='INPUT' aaname='Referencia de proveedor' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:ImageFound DisplayName="Image Exists 'iexplore.exe Nuevo'" Found="[errorData]" sap:VirtualizedContainerService.HintSize="663,106" sap2010:WorkflowViewState.IdRef="ImageFound_5">
+                <ui:ImageFound.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKgAAAAkCAYAAAAdOXEXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALcSURBVHhe7ZfdiZRBEEXNSHwxBfHFIPTBGEQwBwVzUAxCMYs1mZEDc+Ta9OzOgrj1LfdAMf1bXT93dtgnp1IGU4GW0VSgZTQVaBlNBVpGU4GW0VSgZTQVaBlNBXpgvnz9dnrx8tV59ji5t0Bfv3l7evrs+R+7ufl1evf+w3n3mGQ+ad9//DyfmAfiJMYK9AxCpCAINKFArLN/ZD5++vxXbn4Rp4u0Aj1Dwy4Vg+ZObuQ1rAL1Czn516ECPYP4aBZNvAsKRlM5j4lzLMWc6ykQ3sKXf8loRuK6AvJN58aM0PCTeztWgULeYc839Av6zrO+jSkgBY9J3s388izmW+BPO2aNkryX/fKeOVzTywlcJVCTu+uvpKLZFU0ojHPGa1P5zCbc9qaiEcbYrsH6z2YnxJICtZHE4hhLOG+jfdN4nOd7+BJq5J75MseyfvhzzrncY7zOfcN8ic8xljEcgX8qUKBINg28u9rOV67jI4u/45JAwaYoAj5zvsJ7xqZlM9e39J/oQ7iTPhx7dzX2d3FgxL3zZ41yLKu48XM07vUTn8W5xE6gdwktm/KQAsXfJda3dg1f38zcWTM3z+24LQ7u6APS/65eGeMu3iNw9T9JJH9JMCSPAWcoluwKwxqFds/z2YBdwVceUqD6T8G4lngma7LGBqxRj13erBm/dQbGnrWW6XO3fzSuFqhFXYtH4tk49rMZwL1svmM+8yznbmvUCu/qywZirK8icD8bmPBexrjCXuYJxJcxsr/mztpufXeX2Iwz3zIu1jIH1pnrh3HmwJhawqMXqFAMEtWykLmXDbHoGuIBi6Z530a4don0yznuYYpTW+c2WHIPMz5RCFjmC5dylvWLkngPU0hwW7xrLGt98t4qTu1I3FugpfxPKtAymgq0jKYCLaOpQMtoKtAymgq0jKYCLaOpQMtoKtAymgq0jKYCLaOpQMtoKtAymgq0jKYCLaOpQMtgTqffXDfk2SZ4iHIAAAAASUVORK5CYII=" />
+                </ui:ImageFound.Image>
+                <ui:ImageFound.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+                </ui:ImageFound.Target>
+              </ui:ImageFound>
+              <If Condition="[errorData=true]" sap:VirtualizedContainerService.HintSize="663,1334" sap2010:WorkflowViewState.IdRef="If_13">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="518,1187" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence sap:VirtualizedContainerService.HintSize="476,1095" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="ui:DatabaseConnection" Name="Conn" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MoveFile ContinueOnError="{x:Null}" Destination="[FilePath.ToString]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="MoveFile_7" Overwrite="False" Path="[In_Factura]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[In_Factura+&quot; &quot;+&quot;no se pudo procesa!&quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Proveedor]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[in_StrName.ToString]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[NumeroFactura]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[in_StrNoFact.ToString]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:DatabaseTransaction ContinueOnError="{x:Null}" DatabaseConnection="[Conn]" DisplayName="BaseDatos" sap:VirtualizedContainerService.HintSize="434,417" sap2010:WorkflowViewState.IdRef="DatabaseTransaction_2" ProviderName="System.Data.Odbc" UseTransaction="True" ConnectionString="Dsn=MARIADB32;uid=root;pwd=admin">
+                        <ui:DatabaseTransaction.Body>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,308" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Execute Query" ExistingDbConnection="[Conn]" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_3" Sql="USE FALCOM">
+                              <ui:ExecuteQuery.Parameters>
+                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                              </ui:ExecuteQuery.Parameters>
+                            </ui:ExecuteQuery>
+                            <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Execute Query" ExistingDbConnection="[Conn]" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_4" Sql="[&quot;INSERT INTO T_LOG (Proveedor,NumeroFactura,LogResult) VALUES(' &quot; &amp;  Proveedor &amp;  &quot; ',' &quot; &amp;  NumeroFactura &amp;  &quot; ',' &quot; &amp;  LogResult &amp;  &quot; ' );&quot;]">
+                              <ui:ExecuteQuery.Parameters>
+                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                              </ui:ExecuteQuery.Parameters>
+                            </ui:ExecuteQuery>
+                          </Sequence>
+                        </ui:DatabaseTransaction.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:DatabaseTransaction>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[In_Factura+&quot; &quot;+&quot;no se pudo procesa!&quot;]" />
+                      <Throw Exception="[new Exception(&quot;La data no se pudo procesar&quot;)]" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Throw_10" />
+                    </Sequence>
+                  </Sequence>
+                </If.Then>
+              </If>
+              <ui:TypeInto DelayBefore="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayBetweenKeys="50" DisplayName="Type Into 'INPUT  o_field_input_107'" EmptyField="True" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" SendWindowMessages="False" SimulateType="True" Text="[string.Format(&quot;{0:dd/MM/yyyy}&quot;,In_StrDate).Replace(&quot;-&quot;,&quot;/&quot;)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="7190d3c901a985ea47e505ba3cc401e5" Selector="&lt;webctrl tag='INPUT' aaname='Fecha de factura' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:TypeInto DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayBefore="1000" DisplayName="Type Into 'INPUT  o_field_input_107'" EmptyField="True" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="False" SimulateType="True" Text="[string.Format(&quot;{0:dd/MM/yyyy}&quot;,In_StrEndDate).Replace(&quot;-&quot;,&quot;/&quot;)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e2dd7b21fd0b9f9f00defa5696896e91" Selector="&lt;webctrl tag='INPUT' aaname='Fecha vencimiento' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="663,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;inserción de datos de factura &quot;+In_Factura]" />
+              <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[LcDt]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="663,405" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,258" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Click ClickType="CLICK_SINGLE" DelayBefore="3000" DelayMS="100" DisplayName="Click 'A  https://bps-latam.od...'" sap:VirtualizedContainerService.HintSize="621,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="b5577d0119372ef8c562cf42bb15b268" Selector="&lt;webctrl parentname='invoice_line_ids' tag='A' aaname='Añadir un elemento' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                          </ui:Click.Target>
+                        </ui:Click>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="621,51" sap2010:WorkflowViewState.IdRef="CommentOut_35">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[Boo_Alert]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_8">
+                                <ui:UiElementExists.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="419c7d95afe63ac0eafd366fb6538ee4" Selector="&lt;webctrl aaname='×   ¡Alerta!' /&gt;&#xA;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+                                </ui:UiElementExists.Target>
+                              </ui:UiElementExists>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:ImageFound DisplayName="Image Exists 'iexplore.exe Nuevo'" Found="[errorData]" sap:VirtualizedContainerService.HintSize="621,106" sap2010:WorkflowViewState.IdRef="ImageFound_2">
+                          <ui:ImageFound.Image>
+                            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAnCAYAAAClpK6yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHDSURBVGhD7ZTbSQRBEEXNSPwxBfHHIPTDGEQwBwVzUAxCMYs1mZGz7MWiqAHv9owubB1oerqnX3Wmek6mxqKFmbQwkxZm0sJMWphJCzNpYSYtzKSFmbQwkxZm0sJM/l3Y3f3DdH1zu2sdPqsLe//4nE7PzqfN5mvX88Pj0/P23V8JY5/RvVYXxgGRgpyK0QxjfvUxKtjn4vJq19qPVYURCAFR5g46Ioz157K3gn1GPg4MC3t5fdsemjpDVhGMriV1phLGWBXN0RqMp+YDxHH0A2vF/ghjNG5fVs2weDgCrK4lY6KwGKT+ccokSlwj/x9px0zO49mrOoPDIsKqQ5BxMesYU13LKEzZmgsishyo+iKsG8/G80EIy1cK8tVQIchIFjb3r3OEqZ8SBeWPuA+LCMtBEkD1JRkXrylUGRahDwG/EUZNW+tRZ2HMGWERYTkQHTgjIfHQURjEgEHPlTAJotZ1y3PpG82qyLAwHVoSeFaJwSlgFURR1FagWk+FeXluXJes1bg8V+8kjHa+DS7DwhQM9TGwmLAl0/6Q6QwzWeSnf0y0MJMWZtLCTFqYSQszaWEmLcykhZm0MJMWZtLCLKbpG2qLwp/e9GLBAAAAAElFTkSuQmCC" />
+                          </ui:ImageFound.Image>
+                          <ui:ImageFound.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+                          </ui:ImageFound.Target>
+                        </ui:ImageFound>
+                        <If Condition="[errorData=true]" sap:VirtualizedContainerService.HintSize="621,1243" sap2010:WorkflowViewState.IdRef="If_8">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476,1095" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="ui:DatabaseConnection" Name="Conn" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:MoveFile ContinueOnError="{x:Null}" Destination="[FilePath.ToString]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="MoveFile_3" Overwrite="False" Path="[In_Factura]" />
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[In_Factura+&quot; &quot;+&quot;no se pudo procesa!&quot;]" />
+                              <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[Proveedor]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[in_StrName.ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[NumeroFactura]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[in_StrNoFact.ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:DatabaseTransaction ContinueOnError="{x:Null}" DatabaseConnection="[Conn]" DisplayName="BaseDatos" sap:VirtualizedContainerService.HintSize="434,417" sap2010:WorkflowViewState.IdRef="DatabaseTransaction_1" ProviderName="System.Data.Odbc" UseTransaction="True" ConnectionString="Dsn=MARIADB32;uid=root;pwd=admin">
+                                <ui:DatabaseTransaction.Body>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,308" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Execute Query" ExistingDbConnection="[Conn]" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="USE FALCOM">
+                                      <ui:ExecuteQuery.Parameters>
+                                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                      </ui:ExecuteQuery.Parameters>
+                                    </ui:ExecuteQuery>
+                                    <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Execute Query" ExistingDbConnection="[Conn]" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" Sql="[&quot;INSERT INTO T_LOG (Proveedor,NumeroFactura,LogResult) VALUES(' &quot; &amp;  Proveedor &amp;  &quot; ',' &quot; &amp;  NumeroFactura &amp;  &quot; ',' &quot; &amp;  LogResult &amp;  &quot; ' );&quot;]">
+                                      <ui:ExecuteQuery.Parameters>
+                                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                      </ui:ExecuteQuery.Parameters>
+                                    </ui:ExecuteQuery>
+                                  </Sequence>
+                                </ui:DatabaseTransaction.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:DatabaseTransaction>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[In_Factura+&quot; &quot;+&quot;no se pudo procesa!&quot;]" />
+                              <Throw Exception="[new BusinessRuleException(&quot;La data no se pudo procesar&quot;)]" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Throw_6" />
+                            </Sequence>
+                          </If.Then>
+                        </If>
+                        <ui:TypeInto Activate="True" ClickBeforeTyping="False" DelayBefore="1000" DelayBetweenKeys="70" DelayMS="1000" DisplayName="Type Into 'TEXTAREA'" EmptyField="True" sap:VirtualizedContainerService.HintSize="621,134" sap2010:WorkflowViewState.IdRef="TypeInto_13" SendWindowMessages="False" SimulateType="True" Text="[LcDt.Rows(Count)(0).ToString()]">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="ad0be320cd1ed1ba2d6d94769ae9a222" Selector="&lt;webctrl name='name' colName='Descripción' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:CommentOut DisplayName="Comment  CUENTA ANALITICA" sap:VirtualizedContainerService.HintSize="621,51" sap2010:WorkflowViewState.IdRef="CommentOut_45">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,226" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:TypeInto Activate="True" ClickBeforeTyping="False" DelayBefore="1000" DelayBetweenKeys="70" DelayMS="1000" DisplayName="Type Into 'TEXTAREA'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_18" SendWindowMessages="False" SimulateType="True" Text="[in_StrCA]">
+                                <ui:TypeInto.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="8d4ea12ed12582594f6dc74890829e2e" Selector="&lt;webctrl parentname='account_analytic_id' tag='INPUT' type='text' colName='Cuenta analítica' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                                </ui:TypeInto.Target>
+                              </ui:TypeInto>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:TypeInto Activate="True" ClickBeforeTyping="False" DelayBefore="100" DelayBetweenKeys="50" DelayMS="100" DisplayName="Type Into 'TEXTAREA'" EmptyField="True" sap:VirtualizedContainerService.HintSize="621,134" sap2010:WorkflowViewState.IdRef="TypeInto_14" SendWindowMessages="False" SimulateType="True" Text="[LcDt.Rows(Count)(1).ToString().Replace(&quot;.&quot;,&quot;,&quot;)]">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="c288fb827ac698c605899f4937703394" Selector="&lt;webctrl name='quantity' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE" />
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:TypeInto Activate="True" ClickBeforeTyping="False" DelayBefore="100" DelayBetweenKeys="50" DelayMS="100" DisplayName="Type Into 'TEXTAREA'" EmptyField="True" sap:VirtualizedContainerService.HintSize="621,134" sap2010:WorkflowViewState.IdRef="TypeInto_15" SendWindowMessages="False" SimulateType="True" Text="[LcDt.Rows(Count)(2).ToString().Replace(&quot;.&quot;,&quot;,&quot;).Replace(&quot; &quot;,&quot; &quot;)]">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="00016f97b956d1c995010fb27fce55de" Selector="&lt;webctrl name='price_unit' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE" />
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:TypeInto Activate="True" ClickBeforeTyping="False" DelayBefore="100" DelayBetweenKeys="50" DelayMS="100" DisplayName="Type Into 'TEXTAREA'" EmptyField="True" sap:VirtualizedContainerService.HintSize="621,134" sap2010:WorkflowViewState.IdRef="TypeInto_16" SendWindowMessages="False" SimulateType="True" Text="[LcDt.Rows(Count)(3).ToString().Replace(&quot;.&quot;,&quot;,&quot;).Replace(&quot; &quot;,&quot; &quot;)]">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="edd8bb474ef03350362ddb054da38e30" Selector="&lt;webctrl tag='INPUT' type='text' colName='Impuestos' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                      </Sequence>
+                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[Count]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[Count+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="663,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;inserción de datos de tabla de factura &quot;+In_Factura]" />
+              <Sequence DisplayName="Sequence Retain" sap:VirtualizedContainerService.HintSize="663,1060" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="400" DisplayName="Click 'A  https://bps-latam.od...'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="faaf3c33f39c16494ab688979e3257d2" Selector="&lt;webctrl parentname='tax_line_ids' tag='A' aaname='Añadir un elemento' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:TypeInto DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayBefore="200" DelayBetweenKeys="100" DisplayName="Type Into 'push button'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_19" SendWindowMessages="False" SimulateType="False" Text="Rete fuente">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="fb0f0f3f58b06ecf39381660293a2a91" Selector="&lt;webctrl name='name' tag='INPUT' colName='Descripción de impuesto' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:TypeInto DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayBefore="200" DelayBetweenKeys="100" DisplayName="Type Into 'push button'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_20" SendWindowMessages="False" SimulateType="False" Text="[in_StrCA]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="c9c82fb2597d0eed01ba9ddb1fba06b1" Selector="&lt;webctrl parentname='account_id' tag='INPUT' type='text' colName='Cuenta de impuestos' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="0a06b65a739575b60cacebd0fbda9ed4" Selector="&lt;webctrl parentid='ui-id-*' tag='A' isleaf='1' idx='4' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:SendHotkey DelayBefore="{x:Null}" DelayMS="{x:Null}" Key="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayBetweenKeys="50" DisplayName="Send Hotkey 'INPUT'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_2" KeyModifiers="None" SendWindowMessages="False" SpecialKey="False">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="cb20602a1af0d219c8edff084d0e7fbc" Selector="&lt;webctrl parentname='account_id' tag='INPUT' type='text' colName='Cuenta de impuestos' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+                <ui:TypeInto Activate="True" ClickBeforeTyping="False" DelayBefore="100" DelayBetweenKeys="50" DelayMS="100" DisplayName="Type Into 'TEXTAREA'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_17" SendWindowMessages="False" SimulateType="True" Text="[in_StrRetain.Replace(&quot;.&quot;,&quot;,&quot;).Replace(&quot; &quot;,&quot; &quot;)]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="5a728bd8d5d77cd4c6f7649db4b5c9d2" Selector="&lt;webctrl parentname='amount' tag='INPUT' type='text' colName='Monto' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+              </Sequence>
+              <ui:ImageFound DisplayName="Image Exists 'iexplore.exe Nuevo'" Found="[errorData]" sap:VirtualizedContainerService.HintSize="663,106" sap2010:WorkflowViewState.IdRef="ImageFound_6">
+                <ui:ImageFound.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOYAAAAlCAYAAABWFpWhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARWSURBVHhe7ZhdalxHEEazI5OXbMHkJYtIHrwGE8geEvAeErIIG+9C3swkR+jAR3HvHUkzknrwd6CZrv6prvq6a0b2D6dSynK0MEtZkBZmKQvSwixlQVqYpSxIC7OUBWlhlrIgLcxSFqSFWcqCtDBLWZAWZikL0sIsZUFamKUsSAuzlAVpYX4HvP/5l9Pf//z7YD0e9rz78acHq7wmVynMX3/7cH+Btru7b6ePv//xMHv78LAzP7iV/Iz9OYVZ3o6LCpMC5NIpzMTHwPwt8/nL1/s8ZhEyRntppq7P5bm/mLfGtfRagYsKEyG49C3+/OvT/cO+Zcht77Ip1pf84vFL4Rp8D4XJe2th/o8PB0HOwcPgIc9fGm1aFnGOp9icZbEwNx+b4/7Ceaa2MVNQ+Mm5if++OvegWZPr9Jv7Mvc8j7XkRHMePNumxjl27hFmfvQznjzvyI96C2vxN+OdNvjXlJrTPEs9tN2fseQ+muiXuFhDXqkvzbeUcdES97h/NZ5dmD4eRdgDsVmXFwwplALaVygvxwugr72Hj0fo07xQG7b+6U+MaWtuwrp8+FkInG3fGLDVhcZZwD775it7umyR5+tHGz+eAXl+4j7vjbOxcz1z07bvWhqYu/P4y0JkXJu8co6+Np/4Si1h+mPc2IE5Y8G/WvKZ61bhxQsT8sLAvbNt+cpxfJwTkQtQdKCvjR/8WWxernbCWXtzE9b5QIAYtZmbzXimLsSurUZ7MLelF2NTo4yHfsZCywedTL2ntke22maMzHlW9oGzcm7GSIN5pkx/mTMYD2PzHazIxX/KZvJ7IFI+QPbkhW/Bei/Ey50PZYt5cfS154V4WVsXRIx59hGsSx3yURz5mLoQu7bnT7Z0SZjPBwoZT/bPMfWe2h7ZapsxZmysyzjnXPpN9EvL2KY/5meeqTfr9fNYPV6Ti/7zh0RTnIRk8zEoCDCOIAljXKJzrqfv5TK2d57k44C8ZPzg7zGFCczlZSfEYlysM1cgRu05B8YzdeEsbXWQI12SLY0ynnkmpF7J9DW1PbL3CtN5PlNb5rTnHOQ5gv+9PcQ996QOwrl7Wr4lFxWmDz0vD0g+Rdl6DCkq2Ocz1yoaPhmfZ03ygvLblXHjfWxhWgwZJxBHxpj5uYemDnkGYzSYumTuxgqMHemSmJP664fGWny41/n0mzCeehND3uuRbRxbMcP0bYz4MObcy7ifask6x1nr3F6enkd/xu26VbioMIWEFZaWSedcCu3F2RQGUXPc/fjMsT3SL+vYR8O/47Rpe9lb5Dpa5gEZM2dxbhYMF5/zMHXJNfrX9rFp09y/FXfmht8ZT2rJ/BY+bBr7Zw7nbO8hxzMGcJymBjLzFXynduZvzszJzEFYO+NdjasUZikTC5MiKE+nhVlehBbmZbQwy9WxKG0tzqfTwixlQVqYpSxIC7OUBWlhlrIgLcxSFqSFWcqCtDBLWZAWZikL0sIsZTlOp/8AV21fFrbyaC0AAAAASUVORK5CYII=" />
+                </ui:ImageFound.Image>
+                <ui:ImageFound.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+                </ui:ImageFound.Target>
+              </ui:ImageFound>
+              <ui:ImageFound DisplayName="Image Exists 'iexplore.exe Nuevo'" Found="[errorData]" sap:VirtualizedContainerService.HintSize="663,106" sap2010:WorkflowViewState.IdRef="ImageFound_7">
+                <ui:ImageFound.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAcCAYAAAAwTqwDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFOSURBVFhH7ZTRCcIwEIbdSHxxBfHFIfTBGURwBwV3UBxCcQtdpvKV/nAcbWlPlBrzQ2jzN8ndd0k6Kv5EGTQ1ZdDUlEG/ofFkWpzOl6r3Wb0Fer3dy2Qfj2flDFdvgS5X6xJ0fzhWznAVBmUXN9td2WbzReUOV2FQdhFYHV+eVnhqOtoURGPx7Dz1GYNn7y7F1FrRooZBCS4RvO744tuEVRikxNXnGvBdwJrHunyTWDMCGwIlCQtAMnXB8W1BPLQHtWMlOwbx7r0uCoHqJ+SbDy4YnqgNVH2aiubHSHh2rS7qDUrwpmNatyMUhfEkJmDUBIHwdVx59/Ga5rWpN6i9L1aA1CWATxF8sh6UdVUIPMXRj0jfWK8phzb1AiWgmt0dErPf/M7i2aMmSDXmM4eCyLPrC5YWgUShO/qLyqCpKYOmpgyamjJoasqgaakoXmGDWBNhG70WAAAAAElFTkSuQmCC" />
+                </ui:ImageFound.Image>
+                <ui:ImageFound.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+                </ui:ImageFound.Target>
+              </ui:ImageFound>
+              <If Condition="[errorData=true]" sap:VirtualizedContainerService.HintSize="663,1334" sap2010:WorkflowViewState.IdRef="If_14">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="518,1187" sap2010:WorkflowViewState.IdRef="Sequence_77">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence sap:VirtualizedContainerService.HintSize="476,1095" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="ui:DatabaseConnection" Name="Conn" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MoveFile ContinueOnError="{x:Null}" Destination="[FilePath.ToString]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="MoveFile_8" Overwrite="False" Path="[In_Factura]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[In_Factura+&quot; &quot;+&quot;no se pudo procesa!&quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[Proveedor]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[in_StrName.ToString]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[NumeroFactura]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[in_StrNoFact.ToString]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:DatabaseTransaction ContinueOnError="{x:Null}" DatabaseConnection="[Conn]" DisplayName="BaseDatos" sap:VirtualizedContainerService.HintSize="434,417" sap2010:WorkflowViewState.IdRef="DatabaseTransaction_3" ProviderName="System.Data.Odbc" UseTransaction="True" ConnectionString="Dsn=MARIADB32;uid=root;pwd=admin">
+                        <ui:DatabaseTransaction.Body>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,308" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Execute Query" ExistingDbConnection="[Conn]" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_5" Sql="USE FALCOM">
+                              <ui:ExecuteQuery.Parameters>
+                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                              </ui:ExecuteQuery.Parameters>
+                            </ui:ExecuteQuery>
+                            <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Execute Query" ExistingDbConnection="[Conn]" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6" Sql="[&quot;INSERT INTO T_LOG (Proveedor,NumeroFactura,LogResult) VALUES(' &quot; &amp;  Proveedor &amp;  &quot; ',' &quot; &amp;  NumeroFactura &amp;  &quot; ',' &quot; &amp;  LogResult &amp;  &quot; ' );&quot;]">
+                              <ui:ExecuteQuery.Parameters>
+                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                              </ui:ExecuteQuery.Parameters>
+                            </ui:ExecuteQuery>
+                          </Sequence>
+                        </ui:DatabaseTransaction.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:DatabaseTransaction>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[In_Factura+&quot; &quot;+&quot;no se pudo procesa!&quot;]" />
+                      <Throw Exception="[new Exception(&quot;La data no se pudo procesar&quot;)]" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Throw_11" />
+                    </Sequence>
+                  </Sequence>
+                </If.Then>
+              </If>
+              <ui:Click DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="400" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="663,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="94e92e866cb71d98056de65c51208faf" Selector="&lt;webctrl aaname='Guardar' idx='1' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="663,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[In_Factura+&quot; guardado en la plataforma&quot;]" />
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'iexplore.exe Factura'" sap:VirtualizedContainerService.HintSize="663,297" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="fa23ae5749b1639bb0b99c8de2c5f9a2" Selector="&lt;html title='Factura de proveedor - Odoo' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,151" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="https://bps-latam.odoo.com/web#home" />
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+              </ui:BrowserScope>
+            </Sequence>
+          </ActivityAction>
+        </ui:BrowserScope.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:BrowserScope>
+    </Sequence>
+  </Sequence>
+</Activity>
